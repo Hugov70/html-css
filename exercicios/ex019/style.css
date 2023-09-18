@@ -1,0 +1,26 @@
+@charset "UTF-8"; 
+
+body {
+    background-color: aquamarine;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    color: rgba(3, 24, 17, 0.459);
+}
+h1#principal {
+    color: black;
+    text-align: center;
+    
+}
+h2.basico {
+    color: #1CBAAD;
+}
+h2.intermediario {
+    color: #127A72;
+}
+h2.avancado {
+    color: #093B36;
+}
+.lorem {
+    color: red;
+}

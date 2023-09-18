@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: lightslategrey;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        header {
+            background-color: rgb(90, 104, 117);
+            color: white;
+            padding-top: 5px;
+           
+        }
+        nav {
+            background-color:rgb(48, 55, 61) ;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 3px;
+            box-shadow: 0px 7px 1px rgba(0, 0, 0, 0.61);
+            
+            
+        }
+        nav > a {
+            color: white;
+            padding-right: 25px;
+        }
+        h1 {
+            text-align: center;
+        }
+        footer {
+            text-align: center; 
+            color: white;
+            padding: 3px;
+            background-color:rgb(48, 55, 61) ;
+            margin-top: 10px;
+            
+        }
+        footer > p {
+            margin: 0px;
+        }
+        section {
+            background-color:rgb(175, 195, 212) ;
+            margin: 5px;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        article {
+            margin: 8px;
+            margin-top: 15px;
+        }
+        aside {
+            background-color: rgb(161, 177, 190) ;
+        }
+        main {
+            background-color: rgb(90, 104, 117);
+            padding: 8px;
+            margin-top: 15px;
+            border-radius: 4px;
+            
+        }
+        div#bola {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 15px;
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GROUPING TAGS</h1>
+        <nav>
+            <a href="#">Página 1</a>
+            <a href="#">Página 2</a>
+        </nav>
+    </header>
+    <main>
+        <p>Esportes, politica e tecnologia</p>
+        <section id="futebol">
+            <h2>Futebol e esportes</h2>
+            <article> 
+                <p>O fuebol, também referido como futebol de campo, futebol de onze e, originalmente, futebol associado, é um esporte de equipe jogado entre dois times de 11 jogadores cada um e um árbitro que se ocupa da correta aplicação das normas.</p>
+                <aside>  <!--Algo relativo ao artigo--> 
+                    <p>Feito por Hzin da SIlva</p>
+                </aside>
+            </article>
+        </section>
+    </main> 
+    <footer>
+        <p>Desenvolvido por hzin</p>
+        <p>&copy;Todos os direitos reservamos</p>
+    </footer>
+    <div id="bola">
+        <p>A ball</p>
+    </div>
+</body>
+</html>
