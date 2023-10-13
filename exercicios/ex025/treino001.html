@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+       <h1>Formulário de Aplicação</h1>
+       <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset id="dadosp">
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" autocomplete="name">
+                </p>
+                <p>
+                    Sexo:
+                    <input type="radio" name="sexo" id="mas" checked>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="sexo" id="fem">
+                    <label for="fem">Feminio</label>
+                </p>
+                <p>
+                    <label for="nasc">Data de nascimento:</label>
+                    <input type="date" name="nasc" id="nasc" auto>
+                </p>
+                <p>
+                    Qual estado você mora?
+                    <select name="est" id="est">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Mais informações</legend>
+                <p>
+                    <label for="vontade">Por que gostaria de fazer parte da equipe?</label><br>
+                    <textarea name="vontade" id="vontade" cols="60" rows="10" style="resize: none;"></textarea>
+                </p>
+                <p>
+                    <label for="outequipes">Já fez parte de outras equipes? Se sim, quais?</label><br>
+                    <textarea name="outequipes" id="outequipes" cols="60" rows="10"></textarea>
+                </p>
+                <p>
+                    <label for="aval">Como avalia seu desempenho nessas equipes? </label><br>
+                    <input type="range" name="aval" id="aval" min="0" max="5" value="3" oninput="nava.innerHTML = Number(aval.value)">
+                    <output id="nava">3</output>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Disponibilidade:</legend>
+                <p>
+                    Quais turnos você está disponível para entrar no servidor? <br><br>
+                    <input type="checkbox" name="manha" id="manha">
+                    <label for="manha">Manhã</label><br>
+                    <input type="checkbox" name="tarde" id="tarde">
+                    <label for="manha">Tarde</label><br>
+                    <input type="checkbox" name="noite" id="noite">
+                    <label for="manha">Noite</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Permissões</legend>
+                <input type="checkbox" name="perm1" id="perm1" checked>
+                <label for="perm1">Sei que é um trabalho voluntário e concordo em realizá-lo.</label><br>
+                <input type="checkbox" name="perm2" id="perm2" checked>
+                <label for="perm2">Concordo em realizar este trabalho pelo tempo determinado (3 horas).</label>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+       </form>
+   </main>
+</body>
+</html>
