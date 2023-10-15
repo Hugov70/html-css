@@ -1,0 +1,12 @@
+nav a{
+    display: inline-block;
+}
+nav p {
+    display: none;
+}
+nav:hover a{
+    display: inline-block;   
+}
+main {
+    width: 800px;
+}
